@@ -408,3 +408,9 @@ body.nav-active { overflow: hidden; }
   width: 30px;
   height: 30px;
 }
+[data-footer] {
+  display: block;
+}
+.tab-content#home.active ~ [data-footer] {
+  display: none;
+}

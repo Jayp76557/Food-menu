@@ -19,7 +19,7 @@
 
 .menu-card {
   display: flex;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   gap: 20px;
 }
 .title-span{
@@ -30,6 +30,7 @@
 .hover\:card .card-banner { background-color: var(--gold-crayola); }
 
 .img-menu{
+  
   object-fit: cover;
   /* position: absolute; */
   /* opacity: 50%; */

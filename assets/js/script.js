@@ -49,6 +49,7 @@ const addEventOnElements = function (elements, eventType, callback) {
       console.log("Button clicked");
     }
   });
+const footer = document.querySelector("[data-footer]");
 
 
   /**
