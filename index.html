@@ -73,10 +73,11 @@
     </style>
 </head>
 <body id="top">
+    
     <header class="header" data-header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="./assets/images/logo3.svg" width="160" height="50" alt="Home">
+                <img src="./assets/images/logo3.svg" onclick="openTab(event, 'home')" width="160" height="50" alt="Home">
             </a>
 
             <nav class="navbar" data-navbar>
@@ -85,7 +86,7 @@
                 </button>
 
                 <a href="#" class="logo">
-                    <img src="./assets/images/logo3.svg" width="200" height="70" alt="Home">
+                    <img src="./assets/images/logo3.svg" onclick="openTab(event, 'home')" width="200" height="70" alt="Home">
                 </a>
 
                 <ul class="navbar-list">
@@ -131,6 +132,12 @@
                             <span class="span">DESSERTS</span>
                         </a>
                     </li>
+                    <li class="navbar-item" id="bbb" data-bar>
+                        <a href="#bar" class="navbar-link hover-underline" onclick="openTab(event, 'bar')">
+                            <div class="separator"></div>
+                            <span class="span">BAR</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <div class="text-center">
@@ -168,7 +175,7 @@
                     <p class="label-2 section-subtitle slider-reveal">Traditional & Hygienic</p>
                     <h1 class="display-1 hero-title slider-reveal">For the love of <br> delicious food</h1>
                     <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
-                    <a href="#" class="btn btn-primary slider-reveal">
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
                         <span class="text text-1">View Our Menu</span>
                         <span class="text text-2" aria-hidden="true">View Our Menu</span>
                     </a>
@@ -180,7 +187,7 @@
                     <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
                     <h1 class="display-1 hero-title slider-reveal">Flavors Inspired by <br> the Seasons</h1>
                     <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
-                    <a href="#" class="btn btn-primary slider-reveal">
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
                         <span class="text text-1">View Our Menu</span>
                         <span class="text text-2" aria-hidden="true">View Our Menu</span>
                     </a>
@@ -192,7 +199,7 @@
                     <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
                     <h1 class="display-1 hero-title slider-reveal">Where every flavor <br> tells a story</h1>
                     <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
-                    <a href="#" class="btn btn-primary slider-reveal">
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
                         <span class="text text-1">View Our Menu</span>
                         <span class="text text-2" aria-hidden="true">View Our Menu</span>
                     </a>
@@ -204,9 +211,9 @@
             <button class="slider-btn next" aria-label="slide to next" data-next-btn>
                 <ion-icon name="chevron-forward"></ion-icon>
             </button>
-            <a href="#reservation" class="hero-btn has-after">
-                <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
-                <span class="label-2 text-center span">Book A Table</span>
+            <a href="#bar" class="hero-btn has-after" onclick="openTab(event, 'bar')">
+                <img src="./assets/images/bar.png" width="48" height="48" alt="booking icon">
+                <span class="body-2 text-center span">BAR</span>
             </a>
         </section>
     </div>
@@ -1960,6 +1967,241 @@
                     <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
                     <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-5 move-anim">
     </div>
+    <!-- Bar -->
+    <div class="tab-content back-img" id="bar">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Red Wines">
+                        <p class="section-subtitle title-1 text-center">bar</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Red Wines</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/McPherson Wines - Shiraz.jpg" width="100" height="100" loading="lazy" alt="McPherson Wines - Shiraz" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">McPherson Wines - Shiraz</a></h3>
+                                            <span class="span title-2">$34.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A bold and full-bodied Shiraz with rich dark berry flavors, hints of spice, and smooth tannins, perfect for pairing with grilled meats.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Tin Roof Cellars.webp" width="100" height="100" loading="lazy" alt="Tin Roof Cellars - Merlot" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Tin Roof Cellars - Merlot</a></h3>
+                                            <span class="span title-2">$34.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A smooth and velvety Merlot with ripe plum, cherry, and vanilla notes, offering a balanced and soft finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cline Cellars.webp" width="100" height="100" loading="lazy" alt="Cline Cellars - Zinfande" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Cline Cellars - Zinfande</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A juicy and fruit-forward Zinfandel with flavors of blackberries, licorice, and spice, ideal for barbecue dishes.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/McManis.webp" width="100" height="100" loading="lazy" alt="McManis - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">McManis - Cabernet Sauvignon</a></h3>
+                                            <span class="span title-2">$42.95 </span>
+                                        </div>
+                                        <p class="card-text label-1">A rich and complex Cabernet with notes of blackcurrant, oak, and vanilla, offering a lingering and structured finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Smoking Loon.webp" width="100" height="100" loading="lazy" alt="Smoking Loon - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Smoking Loon - Cabernet Sauvignon</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A medium-bodied Cabernet Sauvignon with black cherry, tobacco, and cocoa flavors, delivering a smooth and easy-drinking experience.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Josh - Cabernet Sauvignon.webp" width="100" height="100" loading="lazy" alt="Josh - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Josh - Cabernet Sauvignon</a></h3>
+                                            <span class="span title-2">$40.95</span>
+                                        </div>
+                                        <p class="card-text label-1">An elegant and well-balanced Cabernet Sauvignon with ripe black fruit, hints of oak, and a silky texture.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Mommessin.webp" width="100" height="100" loading="lazy" alt="Mommessin - Châteauneuf-du-Pape" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Mommessin - Châteauneuf-du-Pape</a></h3>
+                                            <span class="span title-2">$57.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic Châteauneuf-du-Pape with deep red fruit, herbal notes, and a long, velvety finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cave Spring.webp" width="100" height="100" loading="lazy" alt="Cave Spring - Cabernet Franc" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Cave Spring - Cabernet Franc</a></h3>
+                                            <span class="span title-2">$35.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A well-structured Cabernet Franc with flavors of red berries, green pepper, and earthy undertones, reflecting Ontario’s terroir.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Catena Zapata.webp" width="100" height="100" loading="lazy" alt="Catena Zapata - Malbec" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Catena Zapata - Malbec</a></h3>
+                                            <span class="span title-2">$44.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A signature Malbec with intense blackberry, plum, and chocolate notes, offering a bold yet smooth profile.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="White Wines">
+                        <h2 class="headline-2 section-title text-center fix-underline">White Wines</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Inniskillin.jpg.webp" width="100" height="100" loading="lazy" alt="Inniskillin - Riesling Pinot Grigio " class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Inniskillin - Riesling Pinot Grigio </a></h3>
+                                            <span class="span title-2">$29.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A crisp and refreshing blend of Riesling and Pinot Grigio, offering bright citrus and green apple notes with a clean finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Banfi.jpg.webp" width="100" height="100" loading="lazy" alt="Banfi Principessa - Gavi" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Banfi Principessa - Gavi</a></h3>
+                                            <span class="span title-2">$39.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A dry and elegant Italian white wine with floral aromas, hints of pear, and a touch of almond on the finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Wolf Blass.jpg.webp" width="100" height="100" loading="lazy" alt="Wolf Blass - Chardonnay" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Wolf Blass - Chardonnay</a></h3>
+                                            <span class="span title-2">$32.95 </span>
+                                        </div>
+                                        <p class="card-text label-1">A rich, full-bodied Chardonnay with ripe tropical fruit flavors, balanced oak, and a smooth buttery texture.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Konzelmann.webp" width="100" height="100" loading="lazy" alt="Konzelmann - Pinot Blanc" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Konzelmann - Pinot Blanc</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A delicate and well-balanced wine with subtle floral aromas, soft citrus flavors, and a light mineral finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cave Spring.jpg.webp" width="100" height="100" loading="lazy" alt="Cave Spring - Riesling" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Cave Spring - Riesling</a></h3>
+                                            <span class="span title-2">$27.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A lively and aromatic Riesling featuring zesty lime, white peach, and a hint of minerality.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Bouchard.jpg.webp" width="100" height="100" loading="lazy" alt="Bouchard Père & Fils - Chablis" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a href="#" class="card-title">Bouchard Père & Fils - Chablis</a></h3>
+                                            <span class="span title-2">$46.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic Chablis with bright acidity, green apple, citrus, and a flinty minerality that defines the Burgundy region.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+                    <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-4 move-anim">
+                    <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+                    <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-5 move-anim">
+    </div>
     <!-- Footer.html -->
     <div class="topbar" data-footer>
         <div class="container">
@@ -2025,6 +2267,20 @@
             }
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
+
+            const activeLink = document.querySelector(`.navbar-link[href="#${tabName}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+            // Toggle BAR tab visibility
+            const barItem = document.querySelector('.navbar-item[data-bar]');
+            if (window.innerWidth > 1200){
+            if (tabName != 'home') {
+                barItem.style.display = 'list-item';
+            } else {
+                barItem.style.display = 'none'; 
+            }
+        }
         }
     </script>
 

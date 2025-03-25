@@ -103,7 +103,16 @@
      * HERO
      */
   
-    .hero-btn { transform: scale(0.7); }
+     .hero-btn {
+      bottom: 10px;
+      right: 50px;
+      position: fixed;
+      /* transform: scale(1); */
+    }
+    .hero-btn:hover {
+        transform: scale(0.7); 
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45); 
+      }
   
   
   
@@ -323,7 +332,9 @@
       margin-inline: auto;
     }
   
-  
+    .navbar-item[data-bar]{
+      display: none;
+    }
   
     /**
      * TOPBAR
@@ -388,8 +399,9 @@
     .hero { height: 880px; }
   
     .hero-btn {
-      bottom: 100px;
+      bottom: 10px;
       right: 50px;
+      position: fixed;
       /* transform: scale(1); */
     }
     .hero-btn:hover {
