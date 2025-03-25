@@ -19,15 +19,25 @@
 
 .menu-card {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 20px;
+}
+.title-span{
+  /* margin-right: 0px; */
+  width: 100%;
 }
 
 .hover\:card .card-banner { background-color: var(--gold-crayola); }
 
-.hover\:card .card-banner .img-cover { transition: var(--transition-2); }
+.img-menu{
+  object-fit: cover;
+  /* position: absolute; */
+  /* opacity: 50%; */
+}
 
-.hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+.hover\:card .card-banner .img-menu { transition: var(--transition-2); }
+
+.hover\:card:is(:hover, :focus-within) .card-banner .img-menu {
   opacity: 0.7;
   transform: scale(1.05);
 }
@@ -125,4 +135,3 @@
 .menu-list{
   margin-top: 100px;
 }
-
