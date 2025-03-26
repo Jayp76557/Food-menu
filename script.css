@@ -355,5 +355,9 @@
     visibility: visible;
   }
   
+  .topbar-item {
+    display: flex;
+    align-items: center;
+  }
   
   
