@@ -44,7 +44,7 @@
     .topbar:has(~ .header.active) { transform: translateY(-100%); }
   
     .topbar-item:not(.link),
-    .topbar .separator { display: none; }
+    /* .topbar .separator { display: none; } */
   
     .topbar .container,
     .topbar-item {
@@ -66,7 +66,9 @@
     .topbar .link { transition: var(--transition-1); }
   
     .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
-  
+    
+    .footer-info{display: none;}
+
     /**
      * HEADER
      */
@@ -171,6 +173,7 @@
       background-color: var(--gold-crayola);
       color: var(--black);
     }
+    .footer-info{display:inline-flex}
   
   }
   
@@ -190,6 +193,7 @@
      */
   
     .topbar-item:not(.link) { display: flex; }
+    
   
     /* .topbar .item-2 { margin-inline-end: auto; } */
 
